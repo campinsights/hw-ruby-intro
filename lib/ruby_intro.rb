@@ -40,15 +40,17 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  "Hello, " + name
 end
 
 def starts_with_consonant?(string)
-  # YOUR CODE HERE
+  string =~ /\A[bcdfghjklmnpqrstvwxyz]/i
 end
 
 def binary_multiple_of_4?(string)
-  # YOUR CODE HERE
+  if string == '0' then return true
+  else string =~ /\A[01]+00\z/
+  end
 end
 
 # Part 3
